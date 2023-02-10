@@ -1,0 +1,32 @@
+<header th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" th:href="@{/categories}">
+            Accueil
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/categories}">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/categories/new}">Ajouter Categorie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/produitRef}"> Les Produits de Reference</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/addProduit}">Ajouter Produit Reference</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/produitStock}">Les Produits de stock</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/addProduitStock}">Ajouter Stock</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
